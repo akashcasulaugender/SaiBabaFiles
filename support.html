@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Support — Sai Baba App</title>
+  <meta name="description" content="Support page for Sai Baba App. Contact, FAQs, troubleshooting, and policies." />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root { --fg:#111; --muted:#555; --bg:#fff; --card:#f7f7f7; --brand:#7a3cff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color: var(--fg); background: var(--bg); line-height: 1.6; }
+    header { padding: 32px 20px; border-bottom: 1px solid #e8e8e8; background: #fafafa; }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 20px; }
+    h1 { font-size: 1.9rem; margin: 0 0 8px; }
+    .sub { color: var(--muted); margin: 0; }
+    .badge { display:inline-block; background: var(--brand); color:#fff; border-radius: 999px; padding: 4px 10px; font-size: 12px; margin-left: 8px; }
+    section { margin: 28px 0; padding: 20px; background: var(--card); border-radius: 12px; }
+    h2 { margin-top: 0; font-size: 1.25rem; }
+    a { color: #0b62ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+    code,kbd { background:#eee; padding: 2px 6px; border-radius:6px; font-family: ui-monospace,SFMono-Regular,Menlo,monospace; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 720px){ .row { grid-template-columns: 1fr; } }
+    .muted { color: var(--muted); }
+    .button { display:inline-block; padding:10px 14px; border-radius:10px; background:#111; color:#fff; text-decoration:none; }
+    .button:hover { opacity: .9; }
+    footer { text-align:center; color:var(--muted); padding: 30px 20px; border-top:1px solid #e8e8e8; }
+    .small { font-size: 0.92rem; }
+    .mono { font-family: ui-monospace,SFMono-Regular,Menlo,monospace; }
+    .table { width:100%; border-collapse: collapse; background:#fff; border-radius:10px; overflow:hidden; }
+    .table th,.table td { padding:10px 12px; border-bottom:1px solid #eee; text-align:left; }
+    .copy { margin-top:10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Support — Sai Baba App <span class="badge">v 1.0.0</span></h1>
+      <p class="sub">We’re here to help. Contact us, read FAQs, or try quick fixes below.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>
+        • Email: <a href="mailto:akashc.aem@gmail.com">akashc.aem@gmail.com</a><br/>
+        • If you prefer, open a ticket: <a href="https://github.com/YOUR_GITHUB_REPO/issues" rel="nofollow">GitHub Issues</a> (optional)<br/>
+        • Response target: <strong>1–2 business days</strong>.
+      </p>
+      <p class="small muted">Include screenshots if possible and paste the “Device & App Info” (button below) to help us resolve your issue faster.</p>
+    </section>
+
+    <section aria-labelledby="quickfix">
+      <h2 id="quickfix">Quick Troubleshooting</h2>
+      <div class="row">
+        <div>
+          <ul>
+            <li>Force close and reopen the app.</li>
+            <li>Ensure you’re on the latest version from the App Store.</li>
+            <li>Check internet connectivity (Wi-Fi or cellular).</li>
+            <li>Log out and log back in (if applicable).</li>
+            <li>Restart your iPhone/iPad.</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Check system date/time are automatic.</li>
+            <li>Allow notifications/media permissions if prompted.</li>
+            <li>For audio/video: verify device volume and silent switch.</li>
+            <li>Reinstall the app (this may clear local data).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">FAQs</h2>
+      <table class="table" role="table">
+        <tbody>
+          <tr>
+            <th scope="row">Is Sai Baba App free?</th>
+            <td>Yes, the app is free to download. Some content may require an internet connection.</td>
+          </tr>
+          <tr>
+            <th scope="row">Does the app work offline?</th>
+            <td>Core features are available offline after initial load (where applicable). Media that streams from the internet requires connectivity.</td>
+          </tr>
+          <tr>
+            <th scope="row">Where is my data stored?</th>
+            <td>We store minimal data on your device. If cloud sync is enabled, data is transmitted securely. See our <a href="YOUR_PRIVACY_URL">Privacy Policy</a>.</td>
+          </tr>
+          <tr>
+            <th scope="row">How do I report inappropriate content or rights issues?</th>
+            <td>Email <a href="mailto:akashc.aem@gmail.com">akashc.aem@gmail.com</a> with the item link or description. We’ll review promptly.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="deviceinfo">
+      <h2 id="deviceinfo">Device &amp; App Info</h2>
+      <p class="small">Tap the button to copy helpful technical details to include in your email.</p>
+      <pre id="info" class="mono" aria-live="polite"></pre>
+      <button class="button copy" id="copyBtn" type="button">Copy info to clipboard</button>
+    </section>
+
+    <section aria-labelledby="policies">
+      <h2 id="policies">Policies &amp; Legal</h2>
+      <ul>
+        <li><a href="YOUR_PRIVACY_URL">Privacy Policy</a></li>
+        <li><a href="YOUR_TERMS_URL">Terms of Use</a> (optional)</li>
+        <li class="muted small">Content rights: All media used within Sai Baba App are owned by us, licensed, or used with permission.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="contactform">
+      <h2 id="contactform">Quick Contact (opens email)</h2>
+      <p><a class="button" href="mailto:akashc.aem@gmail.com?subject=Support%20Request%20—%20Sai Baba App">Email Support</a></p>
+      <p class="small muted">No account info is required to request help. We will never ask for your password.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="small">© <span id="year"></span> YOUR_COMPANY_OR_NAME. All rights reserved. • Last updated: <span id="updated">2025-10-16</span></p>
+  </div>
+  </footer>
+
+  <script>
+    // Populate year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Build a simple device/app info block the user can copy
+    (function () {
+      var info = [];
+      info.push("App: Sai Baba App");
+      info.push("App Version: 1.0.0");
+      info.push("Platform: iOS");
+      info.push("User Agent: " + navigator.userAgent);
+      info.push("Language: " + (navigator.language || navigator.userLanguage));
+      info.push("Screen: " + window.screen.width + "x" + window.screen.height + " @ " + (window.devicePixelRatio || 1) + "x DPR");
+      info.push("Timezone: " + Intl.DateTimeFormat().resolvedOptions().timeZone);
+      info.push("Date: " + new Date().toISOString());
+      document.getElementById('info').textContent = info.join("\n");
+    })();
+
+    // Copy to clipboard
+    document.getElementById('copyBtn').addEventListener('click', async function () {
+      try {
+        await navigator.clipboard.writeText(document.getElementById('info').textContent);
+        this.textContent = "Copied!";
+        setTimeout(() => this.textContent = "Copy info to clipboard", 1500);
+      } catch (e) {
+        alert("Copy failed. Long-press to select and copy manually.");
+      }
+    });
+  </script>
+</body>
+</html>
